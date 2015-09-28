@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package components;
 
-import java.util.Collection;
+import java.util.Set;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -14,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author faithfulokoye & geoffbrown
+ * @author faithfulokoye
  */
 public class MMGroupTest {
     
@@ -35,33 +36,6 @@ public class MMGroupTest {
     
     @After
     public void tearDown() {
-    }
-
-    /**
-     * Test of getName method, of class MMGroup.
-     */
-    @Test
-    public void testGetName() {
-        System.out.println("getName");
-        MMGroup instance = new MMGroup();
-        String expResult = "";
-        String result = instance.getName();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setName method, of class MMGroup.
-     */
-    @Test
-    public void testSetName() {
-        System.out.println("setName");
-        String name = "";
-        MMGroup instance = new MMGroup();
-        instance.setName(name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -87,6 +61,33 @@ public class MMGroupTest {
         Integer id = null;
         MMGroup instance = new MMGroup();
         instance.setId(id);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getName method, of class MMGroup.
+     */
+    @Test
+    public void testGetName() {
+        System.out.println("getName");
+        MMGroup instance = new MMGroup();
+        String expResult = "";
+        String result = instance.getName();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setName method, of class MMGroup.
+     */
+    @Test
+    public void testSetName() {
+        System.out.println("setName");
+        String name = "";
+        MMGroup instance = new MMGroup();
+        instance.setName(name);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -119,55 +120,98 @@ public class MMGroupTest {
     }
 
     /**
-     * Test of getOwnerId method, of class MMGroup.
+     * Test of getGroupMembers method, of class MMGroup.
      */
     @Test
-    public void testGetOwnerId() {
-        System.out.println("getOwnerId");
+    public void testGetGroupMembers() {
+        System.out.println("getGroupMembers");
+        MMGroup instance = new MMGroup();
+        Set<User> expResult = null;
+        Set<User> result = instance.getGroupMembers();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setGroupMembers method, of class MMGroup.
+     */
+    @Test
+    public void testSetGroupMembers() {
+        System.out.println("setGroupMembers");
+        Set<User> groupMembers = null;
+        MMGroup instance = new MMGroup();
+        instance.setGroupMembers(groupMembers);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getOwner method, of class MMGroup.
+     */
+    @Test
+    public void testGetOwner() {
+        System.out.println("getOwner");
         MMGroup instance = new MMGroup();
         User expResult = null;
-        User result = instance.getOwnerId();
+        User result = instance.getOwner();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setOwnerId method, of class MMGroup.
+     * Test of setOwner method, of class MMGroup.
      */
     @Test
-    public void testSetOwnerId() {
-        System.out.println("setOwnerId");
-        User ownerId = null;
+    public void testSetOwner() {
+        System.out.println("setOwner");
+        User owner = null;
         MMGroup instance = new MMGroup();
-        instance.setOwnerId(ownerId);
+        instance.setOwner(owner);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getUsers method, of class MMGroup.
+     * Test of hashCode method, of class MMGroup.
      */
     @Test
-    public void testGetUsers() {
-        System.out.println("getUsers");
+    public void testHashCode() {
+        System.out.println("hashCode");
         MMGroup instance = new MMGroup();
-        Collection<User> expResult = null;
-        Collection<User> result = instance.getUsers();
+        int expResult = 0;
+        int result = instance.hashCode();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setUsers method, of class MMGroup.
+     * Test of equals method, of class MMGroup.
      */
     @Test
-    public void testSetUsers() {
-        System.out.println("setUsers");
-        Collection<User> users = null;
+    public void testEquals() {
+        System.out.println("equals");
+        Object object = null;
         MMGroup instance = new MMGroup();
-        instance.setUsers(users);
+        boolean expResult = false;
+        boolean result = instance.equals(object);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of toString method, of class MMGroup.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        MMGroup instance = new MMGroup();
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

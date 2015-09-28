@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package components;
 
-import java.util.Collection;
+import java.util.Date;
+import java.util.Set;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -14,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author faithfulokoye & geoffbrown
+ * @author faithfulokoye
  */
 public class MoodStatusTest {
     
@@ -38,55 +40,55 @@ public class MoodStatusTest {
     }
 
     /**
-     * Test of getDescriptiveWord method, of class MoodStatus.
+     * Test of getId method, of class MoodStatus.
      */
     @Test
-    public void testGetDescriptiveWord() {
-        System.out.println("getDescriptiveWord");
+    public void testGetId() {
+        System.out.println("getId");
         MoodStatus instance = new MoodStatus();
-        String expResult = "";
-        String result = instance.getDescriptiveWord();
+        Integer expResult = null;
+        Integer result = instance.getId();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setDescriptiveWord method, of class MoodStatus.
+     * Test of setId method, of class MoodStatus.
      */
     @Test
-    public void testSetDescriptiveWord() {
-        System.out.println("setDescriptiveWord");
-        String descriptiveWord = "";
+    public void testSetId() {
+        System.out.println("setId");
+        Integer id = null;
         MoodStatus instance = new MoodStatus();
-        instance.setDescriptiveWord(descriptiveWord);
+        instance.setId(id);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getComments method, of class MoodStatus.
+     * Test of getTimeStamp method, of class MoodStatus.
      */
     @Test
-    public void testGetComments() {
-        System.out.println("getComments");
+    public void testGetTimeStamp() {
+        System.out.println("getTimeStamp");
         MoodStatus instance = new MoodStatus();
-        Collection<Comment> expResult = null;
-        Collection<Comment> result = instance.getComments();
+        Date expResult = null;
+        Date result = instance.getTimeStamp();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setComments method, of class MoodStatus.
+     * Test of setTimeStamp method, of class MoodStatus.
      */
     @Test
-    public void testSetComments() {
-        System.out.println("setComments");
-        Collection<Comment> comments = null;
+    public void testSetTimeStamp() {
+        System.out.println("setTimeStamp");
+        Date time_stamp = null;
         MoodStatus instance = new MoodStatus();
-        instance.setComments(comments);
+        instance.setTimeStamp(time_stamp);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -119,109 +121,28 @@ public class MoodStatusTest {
     }
 
     /**
-     * Test of getEnergyRating method, of class MoodStatus.
+     * Test of getDescriptiveWord method, of class MoodStatus.
      */
     @Test
-    public void testGetEnergyRating() {
-        System.out.println("getEnergyRating");
+    public void testGetDescriptiveWord() {
+        System.out.println("getDescriptiveWord");
         MoodStatus instance = new MoodStatus();
-        Integer expResult = null;
-        Integer result = instance.getEnergyRating();
+        String expResult = "";
+        String result = instance.getDescriptiveWord();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setEnergyRating method, of class MoodStatus.
+     * Test of setDescriptiveWord method, of class MoodStatus.
      */
     @Test
-    public void testSetEnergyRating() {
-        System.out.println("setEnergyRating");
-        Integer energyRating = null;
+    public void testSetDescriptiveWord() {
+        System.out.println("setDescriptiveWord");
+        String descriptiveWord = "";
         MoodStatus instance = new MoodStatus();
-        instance.setEnergyRating(energyRating);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getId method, of class MoodStatus.
-     */
-    @Test
-    public void testGetId() {
-        System.out.println("getId");
-        MoodStatus instance = new MoodStatus();
-        Integer expResult = null;
-        Integer result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setId method, of class MoodStatus.
-     */
-    @Test
-    public void testSetId() {
-        System.out.println("setId");
-        Integer id = null;
-        MoodStatus instance = new MoodStatus();
-        instance.setId(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of isIsPrivate method, of class MoodStatus.
-     */
-    @Test
-    public void testIsIsPrivate() {
-        System.out.println("isIsPrivate");
-        MoodStatus instance = new MoodStatus();
-        Boolean expResult = null;
-        Boolean result = instance.isIsPrivate();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setIsPrivate method, of class MoodStatus.
-     */
-    @Test
-    public void testSetIsPrivate() {
-        System.out.println("setIsPrivate");
-        Boolean isPrivate = null;
-        MoodStatus instance = new MoodStatus();
-        instance.setIsPrivate(isPrivate);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getUserId method, of class MoodStatus.
-     */
-    @Test
-    public void testGetUserId() {
-        System.out.println("getUserId");
-        MoodStatus instance = new MoodStatus();
-        User expResult = null;
-        User result = instance.getUserId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setUserId method, of class MoodStatus.
-     */
-    @Test
-    public void testSetUserId() {
-        System.out.println("setUserId");
-        User userId = null;
-        MoodStatus instance = new MoodStatus();
-        instance.setUserId(userId);
+        instance.setDescriptiveWord(descriptiveWord);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -254,28 +175,152 @@ public class MoodStatusTest {
     }
 
     /**
-     * Test of getTimestamp method, of class MoodStatus.
+     * Test of getEnergyRating method, of class MoodStatus.
      */
     @Test
-    public void testGetTimestamp() {
-        System.out.println("getTimestamp");
+    public void testGetEnergyRating() {
+        System.out.println("getEnergyRating");
         MoodStatus instance = new MoodStatus();
-        String expResult = "";
-        String result = instance.getTimestamp();
+        Integer expResult = null;
+        Integer result = instance.getEnergyRating();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setTimestamp method, of class MoodStatus.
+     * Test of setEnergyRating method, of class MoodStatus.
      */
     @Test
-    public void testSetTimestamp() {
-        System.out.println("setTimestamp");
-        String timestamp = "";
+    public void testSetEnergyRating() {
+        System.out.println("setEnergyRating");
+        Integer energyRating = null;
         MoodStatus instance = new MoodStatus();
-        instance.setTimestamp(timestamp);
+        instance.setEnergyRating(energyRating);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getIsPrivate method, of class MoodStatus.
+     */
+    @Test
+    public void testGetIsPrivate() {
+        System.out.println("getIsPrivate");
+        MoodStatus instance = new MoodStatus();
+        Boolean expResult = null;
+        Boolean result = instance.getIsPrivate();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setIsPrivate method, of class MoodStatus.
+     */
+    @Test
+    public void testSetIsPrivate() {
+        System.out.println("setIsPrivate");
+        Boolean isPrivate = null;
+        MoodStatus instance = new MoodStatus();
+        instance.setIsPrivate(isPrivate);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getComments method, of class MoodStatus.
+     */
+    @Test
+    public void testGetComments() {
+        System.out.println("getComments");
+        MoodStatus instance = new MoodStatus();
+        Set<Comment> expResult = null;
+        Set<Comment> result = instance.getComments();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setComments method, of class MoodStatus.
+     */
+    @Test
+    public void testSetComments() {
+        System.out.println("setComments");
+        Set<Comment> comments = null;
+        MoodStatus instance = new MoodStatus();
+        instance.setComments(comments);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getUser method, of class MoodStatus.
+     */
+    @Test
+    public void testGetUser() {
+        System.out.println("getUser");
+        MoodStatus instance = new MoodStatus();
+        User expResult = null;
+        User result = instance.getUser();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setUser method, of class MoodStatus.
+     */
+    @Test
+    public void testSetUser() {
+        System.out.println("setUser");
+        User user = null;
+        MoodStatus instance = new MoodStatus();
+        instance.setUser(user);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of hashCode method, of class MoodStatus.
+     */
+    @Test
+    public void testHashCode() {
+        System.out.println("hashCode");
+        MoodStatus instance = new MoodStatus();
+        int expResult = 0;
+        int result = instance.hashCode();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of equals method, of class MoodStatus.
+     */
+    @Test
+    public void testEquals() {
+        System.out.println("equals");
+        Object object = null;
+        MoodStatus instance = new MoodStatus();
+        boolean expResult = false;
+        boolean result = instance.equals(object);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of toString method, of class MoodStatus.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        MoodStatus instance = new MoodStatus();
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
